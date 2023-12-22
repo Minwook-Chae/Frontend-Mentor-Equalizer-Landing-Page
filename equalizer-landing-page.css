@@ -240,6 +240,12 @@ main {
   color: var(--color-black);
 }
 
+.main__blur {
+  position: absolute;
+
+  visibility: hidden;
+}
+
 footer {
   margin: 64px 24px;
 }
