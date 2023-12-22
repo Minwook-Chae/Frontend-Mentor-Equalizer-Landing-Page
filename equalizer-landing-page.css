@@ -97,9 +97,9 @@ body {
 
 .blur--2,
 .bg-pattern {
-  position: absolute;
+  display: none;
 
-  visibility: hidden;
+  position: absolute;
 }
 
 .hero {
@@ -241,9 +241,9 @@ main {
 }
 
 .main__blur {
-  position: absolute;
+  display: none;
 
-  visibility: hidden;
+  position: absolute;
 }
 
 footer {
