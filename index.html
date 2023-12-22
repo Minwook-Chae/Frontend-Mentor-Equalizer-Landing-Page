@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Equalizer landing page</title>
-</head>
-<body>
-
-  We make your music sound extraordinary.
-
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
-
-  Premium EQ
-
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
-
-  $4 / month
-
-  iOS Download
-  Android Download
-
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
-
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="equalizer-landing-page.css" />
+    <title>Frontend Mentor | Equalizer landing page</title>
+  </head>
+  <body>
+    <img class="blur--1" src="./images/bg-main-mobile.png" alt="" />
+    <img class="blur--2" src="./images/bg-main-mobile.png" alt="" />
+    <img class="bg-pattern" src="./images/bg-pattern-1.svg" alt="" />
+    <div class="hero">
+      <img class="hero__logo" src="./images/logo.svg" alt="equalizer logo" />
+      <div class="hero__text">
+        <h1 class="hero__text__heading">
+          We make your music sound extraordinary.
+        </h1>
+        <p class="hero__text__paragraph">
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </div>
+    </div>
+    <main>
+      <img
+        class="main__phone"
+        src="./images/illustration-app.png"
+        alt="picture of app on phone"
+      />
+      <div class="main__black">
+        <img
+          class="main__black__bg-pattern"
+          src="./images/bg-pattern-2.svg"
+          alt=""
+        />
+      </div>
+      <div class="main__orange">
+        <h2 class="main__orange__heading">Premium EQ</h2>
+        <p class="main__orange__paragraph">
+          Get expert-level control with a robust equalizer, volume mixer, and
+          spatial audio. Take your listening experience to a whole new level and
+          access all our incredible features!
+        </p>
+        <p class="main__orange__price">$4</p>
+        <div class="main__orange__buttons">
+          <button class="main__orange__buttons--apple">iOS Download</button>
+          <button class="main__orange__buttons--android">
+            Android Download
+          </button>
+        </div>
+      </div>
+      <img class="main__blur" src="./bg-main-mobile.png" alt="" />
+    </main>
+    <footer>
+      <img class="footer__logo" src="./images/logo.svg" alt="equalizer logo" />
+      <div class="footer__text">
+        <p>All rights reserved © Equalizer 2021</p>
+        <p>
+          Have any problems? Contact us via social media or email us at
+          <span class="footer__text__bold">equalizer@example.com</span>
+        </p>
+      </div>
+      <div class="footer__icons">
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,260 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --color-blue: hsl(177, 68%, 64%);
+  --color-orange: hsl(12, 94%, 65%);
+  --color-yellow: hsl(33, 100%, 70%);
+  --color-white: hsl(20, 33%, 98%);
+  --color-black: hsl(244, 23%, 12%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /* removes default styling from certain elements like button and label */
+  font: inherit;
+
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* color-scheme: dark light;  */
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url(low-res-version-of-img.jpg); */
+  shape-margin: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  /* display: block;
+    max-width: 100%; */
+  display: block;
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* end of reset.css */
+html {
+  display: grid;
+  justify-content: center;
+
+  overflow-x: hidden;
+
+  margin: auto;
+}
+
+body {
+  position: relative;
+
+  display: grid;
+
+  width: 375px;
+  /* min-height: 1945px; */
+
+  background-color: var(--color-white);
+}
+
+.blur--1 {
+  position: absolute;
+  top: -120px;
+  left: 100px;
+
+  transform: scale(1.5);
+}
+
+.blur--2,
+.bg-pattern {
+  position: absolute;
+
+  visibility: hidden;
+}
+
+.hero {
+  position: relative;
+
+  margin: 40px 0 0 24px;
+}
+
+.hero__logo {
+  margin-bottom: 64px;
+  width: 146px;
+  height: 32px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-right: 24px;
+}
+
+.hero__text__heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+}
+
+.hero__text__paragraph {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+main {
+  position: relative;
+
+  margin-top: 68px;
+}
+
+.main__phone {
+  position: absolute;
+  left: calc(50% - 104px);
+
+  width: 208px;
+  height: 430px;
+}
+
+.main__black {
+  margin-top: 98px;
+  border-radius: 10px;
+  height: 600px;
+
+  background-color: var(--color-black);
+}
+
+.main__black__bg-pattern {
+  margin: auto;
+  width: 280px;
+  height: 420px;
+}
+
+.main__orange {
+  position: relative;
+  top: -220px;
+
+  margin-bottom: -220px;
+  border-radius: 10px;
+  padding: 48px 36px;
+  min-height: 546px;
+
+  background-color: var(--color-orange);
+  color: white;
+}
+
+.main__orange__heading {
+  margin-bottom: 1.2rem;
+
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.main__orange__paragraph {
+  margin-bottom: 3.2rem;
+
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.main__orange__price {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  margin-bottom: 3.2rem;
+
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+.main__orange__price::after {
+  content: " / month";
+
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main__orange__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main__orange__buttons {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+
+.main__orange__buttons--apple,
+.main__orange__buttons--android {
+  border-radius: 10px;
+  width: 29.6rem;
+  height: 6.1rem;
+}
+
+.main__orange__buttons--apple {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.main__orange__buttons--android {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+footer {
+  margin: 64px 24px;
+}
+
+.footer__logo {
+  margin-bottom: 32px;
+}
+
+.footer__text {
+  margin-bottom: 64px;
+
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.footer__text__bold {
+  font-weight: 700;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 20px;
+}
