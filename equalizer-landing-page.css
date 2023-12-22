@@ -220,6 +220,11 @@ main {
 
 .main__orange__buttons--apple,
 .main__orange__buttons--android {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
   border-radius: 10px;
   width: 29.6rem;
   height: 6.1rem;
