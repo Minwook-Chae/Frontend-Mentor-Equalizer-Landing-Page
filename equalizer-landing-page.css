@@ -73,6 +73,9 @@ html {
 
   overflow-x: hidden;
 
+  width: 375px;
+  /* min-height: 1945px; */
+
   margin: auto;
 }
 
@@ -80,9 +83,6 @@ body {
   position: relative;
 
   display: grid;
-
-  width: 375px;
-  /* min-height: 1945px; */
 
   background-color: var(--color-white);
 }
