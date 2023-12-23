@@ -30,6 +30,9 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+
   min-height: 100vh;
   font-size: 1.6rem;
 }
@@ -67,27 +70,27 @@ a {
 }
 
 /* end of reset.css */
-html {
-  display: grid;
-  justify-content: center;
-
-  overflow-x: hidden;
-
-  width: 375px;
-  /* min-height: 1945px; */
-
-  margin: auto;
-}
-
-body {
+.equalizer-landing-page {
   position: relative;
 
   display: grid;
+  justify-content: center;
+  align-content: center;
+
+  overflow-x: clip;
+
+  width: 375px;
 
   background-color: var(--color-white);
 }
 
-.blur--1 {
+.hero {
+  position: relative;
+
+  margin: 40px 0 0 24px;
+}
+
+.hero__blur--1 {
   position: absolute;
   top: -120px;
   left: 100px;
@@ -95,17 +98,11 @@ body {
   transform: scale(1.5);
 }
 
-.blur--2,
-.bg-pattern {
+.hero__blur--2,
+.hero__bg-pattern {
   display: none;
 
   position: absolute;
-}
-
-.hero {
-  position: relative;
-
-  margin: 40px 0 0 24px;
 }
 
 .hero__logo {
@@ -234,10 +231,16 @@ main {
   background-color: var(--color-black);
   color: var(--color-white);
 }
+.main__orange__buttons--apple:hover {
+  background-color: var(--color-blue);
+}
 
 .main__orange__buttons--android {
   background-color: var(--color-white);
   color: var(--color-black);
+}
+.main__orange__buttons--android:hover {
+  background-color: var(--color-yellow);
 }
 
 .main__blur {
@@ -268,4 +271,14 @@ footer {
 .footer__icons {
   display: flex;
   gap: 20px;
+
+  cursor: pointer;
+
+  fill: var(--color-black);
+}
+
+.footer__icons--facebook:hover,
+.footer__icons--instagram:hover,
+.footer__icons--twitter:hover {
+  fill: var(--color-orange);
 }
