@@ -34,6 +34,7 @@ body {
   justify-content: center;
 
   min-height: 100vh;
+
   font-size: 1.6rem;
 }
 
@@ -71,23 +72,23 @@ a {
 
 /* end of reset.css */
 .equalizer-landing-page {
-  position: relative;
-
   display: grid;
   justify-content: center;
   align-content: center;
 
   overflow-x: clip;
 
-  width: 375px;
-
   background-color: var(--color-white);
+
+  width: 375px;
 }
 
 .hero {
   position: relative;
 
   margin: 40px 0 0 24px;
+
+  background-color: transparent;
 }
 
 .hero__blur--1 {
@@ -96,6 +97,8 @@ a {
   left: 100px;
 
   transform: scale(1.5);
+
+  z-index: 0;
 }
 
 .hero__blur--2,
@@ -112,11 +115,15 @@ a {
 }
 
 .hero__text {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
   margin-right: 24px;
+
+  z-index: 1;
 }
 
 .hero__text__heading {
@@ -168,7 +175,7 @@ main {
   min-height: 546px;
 
   background-color: var(--color-orange);
-  color: white;
+  color: var(--color-white);
 }
 
 .main__orange__heading {
@@ -272,9 +279,13 @@ footer {
   display: flex;
   gap: 20px;
 
-  cursor: pointer;
-
   fill: var(--color-black);
+}
+
+.footer__icons--facebook,
+.footer__icons--instagram,
+.footer__icons--twitter {
+  cursor: pointer;
 }
 
 .footer__icons--facebook:hover,
