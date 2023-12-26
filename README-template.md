@@ -105,6 +105,9 @@ Move the blurs and pattern from the .hero to the .equalizer-landing-page class.
 
 Should I do media queries like (768px <= width) or (768px <= width < 1440px)?
 
+Where is that little bit of extra vertical content in the box model of main coming from?
+I mean the thing that causes it to extend past the .main\_\_orange box.
+
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources

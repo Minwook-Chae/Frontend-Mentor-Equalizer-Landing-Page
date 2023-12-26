@@ -467,14 +467,16 @@ main {
     right: 0px;
     bottom: -100px;
 
-    /* opacity: 0.75; */
-    transform: scale(1.5) rotate(-60deg);
+    opacity: 0.75;
+    transform: scale(1.5) rotate(-90deg);
 
     z-index: 0;
   }
 }
 
 footer {
+  position: relative;
+
   display: grid;
   grid-template-areas:
     "footer__logo"
@@ -482,6 +484,8 @@ footer {
     "footer__icons";
 
   margin: 64px 24px;
+
+  z-index: 1; /* so footer is in front of main__blur */
 }
 @media (768px <= width) {
   footer {
