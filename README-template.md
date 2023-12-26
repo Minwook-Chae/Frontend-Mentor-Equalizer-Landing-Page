@@ -95,9 +95,15 @@ Concerning line-height, at one point, I used something like 4.8rem to achieve a 
 
 Should I group my media queries altogether or put a media query after each class?
 
+If I do the latter, should the media query rule come before or after something like a pseudo-element selector?
+
 When to use positioning vs margin? Like with the orange card under the tablet width?
 
 When to use margins over positioning and vice versa?
+
+Move the blurs and pattern from the .hero to the .equalizer-landing-page class.
+
+Should I do media queries like (768px <= width) or (768px <= width < 1440px)?
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 

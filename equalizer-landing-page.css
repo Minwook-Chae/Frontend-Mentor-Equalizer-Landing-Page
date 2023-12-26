@@ -87,6 +87,11 @@ a {
     width: 768px;
   }
 }
+@media (1440px <= width) {
+  .equalizer-landing-page {
+    width: 1440px;
+  }
+}
 
 .hero {
   position: relative;
@@ -98,6 +103,11 @@ a {
 @media (768px <= width) {
   .hero {
     margin: 62px 0 0 39px;
+  }
+}
+@media (1440px <= width) {
+  .hero {
+    margin-left: 166px;
   }
 }
 
@@ -146,6 +156,17 @@ a {
     height: 400px;
   }
 }
+@media (1440px <= width) {
+  .hero__bg-pattern {
+    top: -105px;
+    right: 0;
+
+    display: block;
+
+    width: 312px;
+    height: 468px;
+  }
+}
 
 .hero__logo {
   margin-bottom: 64px;
@@ -176,6 +197,13 @@ a {
     margin-right: 214px;
   }
 }
+@media (1440px <= width) {
+  .hero__text {
+    gap: 4rem;
+
+    margin-right: 400px;
+  }
+}
 
 .hero__text__heading {
   font-size: 4rem;
@@ -186,6 +214,11 @@ a {
   .hero__text__heading {
     font-size: 6.4rem;
     line-height: 1; /* 6.4rem * 1 -> 6.4rem */
+  }
+}
+@media (1440px <= width) {
+  .hero__text__heading {
+    font-size: 8.8rem;
   }
 }
 
@@ -199,6 +232,12 @@ a {
     line-height: 1.555; /* 1.8rem * 1.555 -> 2.8rem */
   }
 }
+@media (1440px <= width) {
+  .hero__text__paragraph {
+    font-size: 2rem;
+    line-height: 1.7; /* 2rem * 1.7 -> 3.4rem */
+  }
+}
 
 main {
   position: relative;
@@ -210,6 +249,11 @@ main {
     margin: 111px 36px 0;
   }
 }
+@media (1440px <= width) {
+  main {
+    margin: 108px 165px 0;
+  }
+}
 
 .main__phone {
   position: absolute;
@@ -218,7 +262,7 @@ main {
   width: 208px;
   height: 430px;
 
-  z-index: 1;
+  z-index: 2;
 }
 @media (768px <= width) {
   .main__phone {
@@ -226,6 +270,14 @@ main {
 
     width: 270px;
     height: 556px;
+  }
+}
+@media (1440px <= width) {
+  .main__phone {
+    left: 102px;
+
+    width: 312px;
+    height: 642px;
   }
 }
 
@@ -237,10 +289,17 @@ main {
   height: 600px;
 
   background-color: var(--color-black);
+
+  z-index: 1;
 }
 @media (768px <= width) {
   .main__black {
     margin-top: 138px;
+  }
+}
+@media (1440px <= width) {
+  .main__black {
+    margin-top: 213px;
   }
 }
 
@@ -257,6 +316,14 @@ main {
     margin-left: 229px;
   }
 }
+@media (1440px <= width) {
+  .main__black__bg-pattern {
+    margin-left: 336px;
+
+    width: 312px;
+    height: 468px;
+  }
+}
 
 .main__orange {
   position: relative;
@@ -270,7 +337,7 @@ main {
   background-color: var(--color-orange);
   color: var(--color-white);
 
-  z-index: 2;
+  z-index: 3;
 }
 @media (768px <= width) {
   .main__orange {
@@ -282,6 +349,16 @@ main {
     margin: 0 auto -415px 239px;
   }
 }
+@media (1440px <= width) {
+  .main__orange {
+    top: -510px;
+
+    padding: 58px 56px;
+    width: 446px;
+
+    margin: 0 auto -500px 569px;
+  }
+}
 
 .main__orange__heading {
   margin-bottom: 1.2rem;
@@ -290,12 +367,28 @@ main {
   font-weight: 700;
   line-height: 1.25; /* 3.2rem * 1.25 -> 4rem */
 }
+@media (1440px <= width) {
+  .main__orange__heading {
+    margin-bottom: 2.2rem;
+
+    font-size: 4rem;
+    line-height: 1.3; /* 4rem * 1.3 -> 5.2rem */
+  }
+}
 
 .main__orange__paragraph {
   margin-bottom: 3.2rem;
 
   font-size: 1.8rem;
   line-height: 1.555; /* 1.8rem * 1.555 -> 2.8rem */
+}
+@media (1440px <= width) {
+  .main__orange__paragraph {
+    margin-bottom: 4rem;
+
+    font-size: 2rem;
+    line-height: 1.7; /* 2rem * 1.7 -> 3.4rem */
+  }
 }
 
 .main__orange__price {
@@ -309,6 +402,11 @@ main {
   line-height: 0.8; /* 6.5rem * 0.8 -> 5.2rem */
   font-weight: 700;
 }
+@media (1440px <= width) {
+  .main__orange__price {
+    margin-bottom: 4.6rem;
+  }
+}
 .main__orange__price::after {
   content: " / month";
 
@@ -321,9 +419,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
 
-.main__orange__buttons {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.777; /* 1.8rem * 1.777 -> 3.2rem */
@@ -364,6 +460,19 @@ main {
 
   position: absolute;
 }
+@media (1440px <= width) {
+  .main__blur {
+    display: block;
+
+    right: 0px;
+    bottom: -100px;
+
+    /* opacity: 0.75; */
+    transform: scale(1.5) rotate(-60deg);
+
+    z-index: 0;
+  }
+}
 
 footer {
   display: grid;
@@ -379,8 +488,15 @@ footer {
     grid-template-areas:
       "footer__logo ."
       "footer__text footer__icons";
-
     grid-template-columns: 55% 45%;
+  }
+}
+@media (1440px <= width) {
+  footer {
+    grid-template-areas: "footer__logo footer__text footer__icons";
+    grid-template-columns: 25% 35% 40%;
+
+    margin: 98px 165px 90px;
   }
 }
 
